@@ -6,7 +6,8 @@ A start template for our admin frontend. Includes testing. More coming soon.
 2. Delete README.md
 3. copy index.htm to the proper jsp location as index.jsp
 4. Uncomment jsp includes
-4. Make sure your paths are correct and working
+5. Make sure your paths are correct and working
+
 ### Unit Testing
 See ./tests/unit/karma.conf.js for details
 ### End to End Testing
