@@ -1,0 +1,34 @@
+<div class="breadcrumb">
+	<ul>
+		<li>
+			<a href="/admin/index.html"><img src="/admin/assets/img/icon-home.png"></a>
+		</li>
+		<li>
+			<a href="/admin/ac/campaigns/index.html?status=A">Some Parent Page</a>
+		</li>
+		<li>
+			{{appVm.title}}
+		</li>
+	</ul>
+</div>
+
+<!-- If this is a form page use class="container" -->
+<div class="container-fluid" ng-show="appVm.loaded">
+	
+	<h1>{{::appVm.title}}</h1>
+	
+	<!-- Example Summary Module Nested in the app -->
+	<div class="row">
+		<div class="col-12">
+			<div ng-include="'app/summary/summary.htm'"></div>
+		</div>
+	</div>
+
+	<!-- Example Table Module Nested in the app -->
+	<div class="row" >
+		<div class="col-12">
+			<div ng-include="'app/table/table.htm'"></div>
+		</div>
+	</div>
+
+</div>

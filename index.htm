@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!-- NOTE: app and appCtrl defined -->
+<html ng-app="app" ng-controller="AppCtrl as appVm">
+<head>
+	<!-- UNCOMMENT ME!!! 
+	<%@ include file="inc/page-header.inc"%>
+	-->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<!-- NOTE: ng-bind on the title -->
+	<title ng-bind="appVm.title"></title>
+
+	<!-- GLOBAL STYLESHEETS -->
+	<link href="/admin/assets/lib/normalize.css/normalize.css" rel="stylesheet">
+	<link href="/admin/assets/css/_nav.css" rel="stylesheet">
+	<link href="/admin/assets/css/_type.css" rel="stylesheet">
+	<link href="/admin/assets/css/_grid.css" rel="stylesheet">
+	<link href="/admin/assets/css/_tables.css" rel="stylesheet">
+	<link href="/admin/assets/css/_helpers.css" rel="stylesheet">
+	<link href="/admin/assets/css/_buttons.css" rel="stylesheet">
+	<link href="/admin/assets/css/_panels.css" rel="stylesheet">
+	<link href="/admin/assets/css/_forms.css" rel="stylesheet">
+	<link href="/admin/assets/css/_icons.css" rel="stylesheet">
+	<link href="/admin/assets/css/_breadcrumbs.css" rel="stylesheet">
+	<link href="/admin/assets/css/_tabs.css" rel="stylesheet">
+	<link href="/admin/assets/css/_summary.css" rel="stylesheet">
+	<link href="/admin/assets/css/_dropdown.css" rel="stylesheet">
+	<link href="/admin/assets/css/_pagination.css" rel="stylesheet">
+	<link href="/admin/assets/css/_modal.css" rel="stylesheet">
+	<link href="/admin/assets/css/_glyphicons.css" rel="stylesheet">
+	<link href="/admin/assets/css/_alerts.css" rel="stylesheet">
+	<link href="/admin/assets/css/_popover.css" rel="stylesheet">
+	<link href="/admin/assets/css/_tooltip.css" rel="stylesheet">
+	<link href="/admin/assets/css/_font-awesome.css" rel="stylesheet">
+	
+	<!-- COMPONENT STYLESHEETS -->
+	<link href="app/summary/summary.css" rel="stylesheet">
+	<link href="app/table/table.css" rel="stylesheet">
+	
+	<!-- GLOBAL JAVASCRIPT -->
+	<!-- UNCOMMENT ME!!!
+	<script src="/admin/dwr/engine.js"></script>
+	<script src="/admin/assets/js/dwr.error.handler.js"></script>
+	<script src="/admin/dwr/interface/BimDWRLogic.js"></script>
+	<script src="/admin/dwr/interface/ModuleDWRLogic.js"></script>
+	-->
+	<!-- UNCOMMENT ME!!!
+	<script src="/admin/assets/js/menu.js"></script>
+	-->
+	<script src="/admin/assets/lib/jquery-2.1/dist/jquery.min.js"></script>
+	<script src="/admin/assets/lib/angular-1.4/angular.min.js"></script>
+	<script src="/admin/assets/lib/angular-1.4/angular-animate.min.js"></script>
+	<script src="/admin/assets/lib/angular-1.4/angular-sanitize.min.js"></script>
+	<script src="/admin/assets/lib/angular-ui/bootstrap/ui-bootstrap-tpls-0.14.3.min.js"></script>
+	<script src="/admin/assets/lib/nielsen/services/nl-modal/nl-modal.js"></script>
+	<!-- UNCOMMENT ONLY THE COMPONENTS YOU NEED, SEE "/admin/assets/lib/nielsen/" for more components
+	<script src="/admin/assets/lib/nielsen/directives/nl-table-sorter/nl-table-sorter.js"></script>
+	<script src="/admin/assets/lib/nielsen/directives/nl-table-search/nl-table-search.js"></script>
+	<script src="/admin/assets/lib/nielsen/directives/nl-table-pager/nl-table-pager.js"></script>
+	<script src="/admin/assets/lib/nielsen/directives/nl-form-integers-only/nl-form-integers-only.js"></script>
+	-->
+
+	<!-- COMPONENT JAVASCRIPT -->
+	<script src="app/app.js"></script>
+	<script src="app/data-service/data-service.js"></script>
+	<script src="app/summary/summary.js"></script>
+	<script src="app/table/table.js"></script>
+
+</head>
+<body ng-cloak>
+
+	<!-- UNCOMMENT ME!!! 
+	<%@ include file="inc/nav.inc"%>
+	-->
+	
+	<div ng-show="appVm.loaded">
+		<div ng-include="'app/app.htm'"></div>
+	
+		<!-- UNCOMMENT ME!!!
+		<%@ include file="inc/footer.inc"%>
+		-->
+	</div>
+	
+</body>
+</html>
