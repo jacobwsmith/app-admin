@@ -1,5 +1,5 @@
 # App Admin
-A start template for our admin frontend. Includes testing. More coming soon.
+A starter template for our admin frontend. Includes testing. More coming soon.
 ### Get It
 1. In terminal
 ```git clone https://github.com/jacobwsmith/app-admin.git app``` 
