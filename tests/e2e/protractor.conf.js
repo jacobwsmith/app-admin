@@ -7,7 +7,7 @@
 //
 // ============================================================
 exports.config = {
-    baseUrl: 'http://tech:nrjk463@admin.local:81', // <--- Make sure this is correct
+    baseUrl: 'http://localhost:81', // <--- Make sure this is correct
     seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: [
        'scenarios.js',
@@ -26,8 +26,8 @@ exports.config = {
         browser.get(browser.baseUrl);
         browser.sleep(10000); // sleeping 10 seconds so we can input the username and password
         var searchForm = browser.driver.findElement(By.tagName('form'));
-        searchForm.findElement(By.name('j_username')).sendKeys('jsmith@vizu.com');
-        searchForm.findElement(By.name('j_password')).sendKeys('test');
+        searchForm.findElement(By.name('j_username')).sendKeys('HERE');
+        searchForm.findElement(By.name('j_password')).sendKeys('HERE');
         element.all(by.css('.submit')).first().click();
         return browser.driver.wait(function() {
             return browser.driver.getCurrentUrl().then(function(url) {
