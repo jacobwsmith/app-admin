@@ -1,4 +1,7 @@
 # App Admin
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 A starter template for our admin frontend. Includes testing. More coming soon.
 ### Get It
 1. In terminal
